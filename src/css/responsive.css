@@ -1,0 +1,10 @@
+@media (max-width: 769px) {
+    
+   
+
+    #input-new-task {
+        border-radius: 1rem;
+        width: 250px;
+    }
+}
+

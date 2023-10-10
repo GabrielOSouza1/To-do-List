@@ -1,0 +1,117 @@
+
+
+:root{
+    --color-dark: rgba(14,14,14);
+    --color-dark2: rgba(32,32,32);
+    --color-dark3: rgba(22,22,22);
+    --color-white: #fff;
+    --color-green: rgba(103,195,80);
+    --color-green2: rgba(51,149,26);
+    --color-red: rgba(184,40,35);
+    --color-red2: rgba(146,22,17);
+    --color-magenta: #FF00FF;
+    --color-magenta2: #8B008B;
+}
+
+body {
+    font-family: 'lato';
+    background-color: var(--color-dark);
+    color: var(--color-magenta);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.content-add-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+#input-new-task, 
+#btn-new-task {
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    padding: 1rem;
+}
+
+
+#input-new-task {
+    border-radius: 1rem;
+    width: 20rem;
+}
+
+
+
+#btn-new-task {
+    background-color: var(--color-magenta);
+    color: var(--color-dark3);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#btn-new-task:hover {
+    background-color: var(--color-magenta2);
+}
+
+#to-do-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+}
+
+#to-do-list {
+    list-style: none;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    display: flex;
+    
+}
+
+#to-do-list li{
+    list-style-type: none;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#to-do-list li:hover{
+    background-color: var(--color-dark3);
+    transition: .4s;
+    border-radius: 1rem;
+    padding-left: 1rem;
+}
+
+#btn-ok{
+    border: none;
+    background-color: var(--color-magenta);
+    color: var(--color-dark);
+    padding: .4rem .8rem;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#btn-ok:hover{
+    background-color: var(--color-magenta2);
+}
